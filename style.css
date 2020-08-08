@@ -1,0 +1,230 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.full-width{
+    width: 100%;
+}
+.container{
+    margin: auto;
+    width: 100%;
+    background: #f1f1f1;
+    min-height: 100vh;
+}
+.margin-4{
+    margin: 4px;
+}
+.head{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 12vh;
+}
+.col-3{
+    width: 28%;
+    padding: 0;
+    height: 10vh;
+    float: left;
+}
+.icon{
+    height: inherit;
+    width: 200px;
+    margin-left: 5vh;
+}
+.col-7{
+    width: 70%;
+    padding: 0;
+    min-height: 10vh;
+    float: right;
+}
+.col-7 .box{
+    width: 30%;
+    height: 10vh;
+    float: left;
+    line-height: 5px;
+    padding-left: 2vh;
+    box-sizing: border-box;
+}
+.box-h2{
+    font-size: 30px;
+    margin-top: 7%;
+    color: green;
+}
+.box-p{
+    font-size: 15px;
+}
+nav ul{
+    width: 100%;
+    padding-left: 100px;
+    min-height: 50px;
+    background: white;
+    overflow: hidden;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    
+    text-align: center;
+}
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    height: 4vh;
+    padding: 15px 20px;
+    color: green;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    background: lime;
+    color: black;
+}
+.active{
+    background: lime;
+    color: black;
+}
+.back{
+    width: 95%;
+    height: 80vh;
+    margin: auto;
+    background: url(./img/back.jpg) no-repeat center;
+    background-size: cover;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding-top: 20vh;
+}
+.back-box{
+    width: 100%;
+    min-height: 30vh;
+    text-align: center;
+    color: white;
+}
+.back-box h1{
+    font-size: 45px;
+    text-shadow: 0 5px 10px black;
+}
+span{
+    color: green;
+    text-shadow: 0 5px 10px white;
+}
+.bb-p{
+    font-size: 20px;
+    text-shadow: 0 5px 10px black;
+
+}
+.btn{
+    padding: 15px 25px;
+    text-transform: uppercase;
+    outline: none;
+    border-radius: 4px;
+    background: lime;
+    border: none;
+    transition: .4s;
+}
+.btn:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.boxes{
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 25vh;
+    align-items: center;
+    min-height: 35vh;
+    overflow: visible;
+}
+.b-box{
+    width: 30%;
+    height: 30vh;
+    border: 1px solid green;
+    border-radius: 5px;
+    background: linear-gradient(45deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(./img/canan.png) no-repeat center;
+    background-size: cover;
+    float: left;
+    margin: 2vh;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+.box-2{
+    background: linear-gradient(45deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(./img/house.jpeg) no-repeat center;
+    background-size: cover;
+}
+.box-3{
+    background: linear-gradient(45deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(./img/jungle-way.png) no-repeat center;
+    background-size: cover;
+}
+.b-box-p{
+    padding: 5px;
+    font-size: 20px;
+}
+.footer{
+    width: 100%;
+    margin-top: 25vh;
+    min-height: 20vh;
+    background: #cff;
+    text-align: center;
+    padding: 2px;
+}
+@media (max-width:1590px){
+    .boxes{
+        width: 95%;
+        margin: auto;
+        min-height: 50vh;
+        overflow: visible;
+        margin-top: 20vh;
+    }
+    
+    .b-box{
+        margin: 10px;
+    }
+}
+
+@media (max-width:1000px){
+    .back{
+        width: 100%;
+        margin-top: 0;
+    }
+    nav ul{
+        padding: 0;
+    }
+    .col-3, .col-7{
+        float: none;
+    }
+    .col-3{
+        width: 100%;
+    }
+    .col-7{
+        width: 100%;
+    }
+    .b-box{
+        width: 40%;
+        margin: auto;
+        margin-top: 2vh;
+        float: none;
+    }
+    .footer{
+        margin-top: 90vh;
+    }
+}
+@media (max-width:830px){
+    nav ul{
+        padding: 0;
+    }
+    nav ul li{
+        display: block;
+    }
+}
+@media (max-width:680px){
+    .col-7{
+        height: 30vh;
+    }
+    .col-7 .box{
+        width: 100%;
+    }
+    .b-box{
+        width: 60%;
+    }
+}
